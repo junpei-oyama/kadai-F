@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Simple BBS</h1>
+<form method="POST">
+    Username: <input type="text" name="username"><br>
+    Message: <input type="text" name="message"><br>
+    <input type="submit">
+</form>
+<hr>
+
+{% if u_list %}
+{% for row in u_list %}
+<li>{{ row }}</li>
+<hr>
+{% endfor %}
+{% endif %}
+
+</body>
+</html>
